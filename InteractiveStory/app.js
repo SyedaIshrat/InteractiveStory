@@ -63,11 +63,28 @@ q4Btn.onclick = function() {
 	const message = document.createElement('p');
 	document.body.appendChild(message);
 	if (answer) {
-		document.getElementById('qFive').style.display = "block";
+		document.getElementById('qSix').style.display = "block";
 	} else {
 		message.textContent = "Why didn't you write anything?";	
 	}
 	document.getElementById('qFour').style.display = "none";
+};
+
+/*
+	question 6
+*/
+
+const q6Btn = document.getElementById('qSixBtn');
+q6Btn.onclick = function() {
+	const answer = document.getElementById('Animal').value;
+	const message = document.createElement('p');
+	document.body.appendChild(message);
+	if (answer) {
+		document.getElementById('qFive').style.display = "block";
+	} else {
+		message.textContent = "Why didn't you write anything?";	
+	}
+	document.getElementById('qSix').style.display = "none";
 };
 
 /*
@@ -76,16 +93,19 @@ q4Btn.onclick = function() {
 
 const q5Btn = document.getElementById('qFiveBtn');
 q5Btn.onclick = function() {
+	const answer = document.getElementById('Item').value;
 	const message = document.createElement('p');
-		message.textContent ("Once upon a time, " + Name.value
- 							+ ", travelled to " 
- 							+ Place.value + " and was eating " 
- 							+ Food.value + " while was " 
- 							+ Hobby.value 
- 							+ " and found an odd looking " 
- 							+ Object.value);
+		message.textContent = "Once upon a time, in The Land of Oz, " 
+							+ Name.value + ", travelled to " 
+ 							+ Place.value +  " because the heart wants what it wants and " 
+ 							+ Name.value + " was eating leftover of "
+ 							+ Food.value + " to celebrate the Tooth Fairy's birthday. Later, " 
+ 							+ Name.value + " was "
+ 							+ Hobby.value + " but suddently started to hallucinate and saw a group of "
+ 							+ Animal.value + " run towards the bar and then found an odd looking " 
+ 							+ Item.value + " but then "
+ 							+ Name.value + " shrugged and moved along with the day. "
 	document.body.appendChild(message);
-	
 
 
 };
