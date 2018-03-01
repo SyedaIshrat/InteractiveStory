@@ -95,16 +95,18 @@ const q5Btn = document.getElementById('qFiveBtn');
 q5Btn.onclick = function() {
 	const answer = document.getElementById('Item').value;
 	const message = document.createElement('p');
-		message.textContent = "Once upon a time, in The Land of Oz, " 
+		message.innerHTML = "Once upon a time, in The Land of Oz, <br> " 
 							+ Name.value + ", travelled to " 
- 							+ Place.value +  " because the heart wants what it wants and " 
+ 							+ Place.value +  " because the heart wants what it wants and <br> " 
  							+ Name.value + " was eating leftover of "
- 							+ Food.value + " to celebrate the Tooth Fairy's birthday. Later, " 
+ 							+ Food.value + " to celebrate the Tooth Fairy's birthday. <br> Later, " 
  							+ Name.value + " was "
- 							+ Hobby.value + " but suddently started to hallucinate and saw a group of "
- 							+ Animal.value + " run towards the bar and then found an odd looking " 
- 							+ Item.value + " but then "
- 							+ Name.value + " shrugged and moved along with the day. "
+ 							+ Hobby.value + " <br> but suddently started to hallucinate <br> and saw a group of "
+ 							+ Animal.value + " run towards the bar <br> On the way, while chasing after the " 
+ 							+ Animal.value + "<br>"
+ 							+ Name.value + " found a strange looking " 
+ 							+ Item.value + " <br> but then "
+ 							+ Name.value + " shrugged and moved along with the day. ";
 	document.body.appendChild(message);
 
 
